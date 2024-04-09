@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>ITEMS MANAGEMENT</title>
+        <style>
+            /* Add your CSS code here */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                list-style-type: none;
+                margin: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="Additem.html"><button>ADD ITEM</button></a></li>
+            <li><a href="Updateitem.html"><button>UPDATE ITEM</button></a></li>
+            <li><a href="Deleteitem.html"><button>DELETE ITEM</button></a></li>
+            <li><form action="Viewitem" method="post">
+                <button>VIEW ITEMS</button>
+            </form></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Login</title>
+    <style type="text/css">
+        /* CSS code for styling the login form and page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Login to Auction System</h1>
+
+    <form action="Login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+
+    <!-- Error message display area -->
+    <div id="error-message"></div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2022 Auction System. All rights reserved.
+    </footer>
+</body>
+</html>

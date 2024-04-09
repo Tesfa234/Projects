@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>ADD AN ITEM</title>
+        <style>
+            /* Add your CSS code here */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            form {
+                max-width: 300px;
+                margin: 20px auto;
+                padding: 20px;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            input[type="text"],input[type="number"],input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                width: 100%;
+                background-color: #007bff;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="Additem" method="post">
+            Item Name: <input type="text" name="itemName" placeholder="ITEM NAME"><br>
+            Item Description: <textarea name="itemDescription" placeholder="DESCRIPTION"></textarea><br>
+            Price: <input type="text" name="price" placeholder="PRICE"><br>
+            Amount:<input type="number" name="amount" placeholder="HOW MUCH"><br>
+            Seller ID:<input type="number" name="sellerid" placeholder="SELLER ID"><br>
+            Seller Name:<input type="text" name="username" placeholder="SELLER NAME"><br>
+            Phone:<input type="number" name="phone" placeholder="Phone"><br>
+            Email:<input type="email" name="email" placeholder="EMAIL"><br>
+            
+            <input type="submit" value="Add">
+        </form>
+    </body>
+</html>
