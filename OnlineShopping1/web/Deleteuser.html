@@ -5,34 +5,48 @@
             /* Add your CSS code here */
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
+                background-color: grey;
                 margin: 0;
                 padding: 0;
             }
             form {
-                max-width: 300px;
+                max-width:30%;
                 margin: 20px auto;
                 padding: 20px;
-                background: #fff;
-                border-radius: 5px;
+                background: transparent;
+                backdrop-filter: blur(20px);
+                border-radius: 20px;
+                border:2px solid #ccc;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
-            input[type="text"] {
+            input[type="text"],input[type="password"]{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border:none;
+                border-bottom: 1px solid #ccc;
+                border-radius: 10px;
+            }
+             input[type="text"]:hover,input[type="password"]:hover{
                 width: 100%;
                 padding: 8px;
                 margin-bottom: 10px;
                 box-sizing: border-box;
                 border: 1px solid #ccc;
-                border-radius: 4px;
+                border-radius: 10px;
             }
             input[type="submit"] {
-                width: 100%;
+                width: 60%;
                 background-color: #dc3545;
                 color: white;
                 padding: 10px 15px;
                 border: none;
-                border-radius: 4px;
+                border-radius: 10px;
                 cursor: pointer;
+                position: relative;
+                left:20%;
+                margin-top:20px;
             }
             input[type="submit"]:hover {
                 background-color: #c82333;
@@ -41,9 +55,10 @@
     </head>
     <body>
         <form action="Deleteuser" method="post">
+            <h1>Remove user</h1>
             USER NAME: <input type="text" name="username" placeholder="Enter Username"><br><br>
-            PASSWORD: <input type="text" name="password" placeholder="Enter the password"><br>
-            <input type="submit" value="delete">
+            PASSWORD: <input type="password" name="password" placeholder="Enter the password"><br>
+            <input type="submit" value="Delete">
         </form>
     </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +8,59 @@
         /* CSS code for styling the login form and page */
 
 body {
+    background-color: tomato;
+    background-size:cover;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+   
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    text-align: center;
+    color: white;
+    text-align:left;
+    position: absolute;
+    top:15%;
+    left:2%;
 }
 
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+.outerbox{
+    height:80%;
+    width:70%;
+    background-color: black;
+    background-size: cover;
+    border-radius:15px;
+    position:absolute;
+    top:10%;
+    left:12.5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+::placeholder{
+    color:#000;
+
+}
+.innerbox{
+    background-color: white;
+    height:100%;
+    width:45%;
+    backdrop-filter: blur(6px);
+    text-align:center;
+    position: absolute;
+    top:0%;
+    left:60%;
+   border-radius:15px;
+   h2{
+        font-size: 200%;
+
+   }
+
+.login{
+    width:100%;
+    position: absolute;
+    top:25%;
+    left:0%;
+
 }
 
 label {
@@ -32,61 +69,102 @@ label {
 }
 
 input[type="text"],
-input[type="password"],
-button {
-    width: 100%;
+input[type="password"]{
+    width: 90%;
     padding: 8px;
     margin-bottom: 10px;
-    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius:5px;
+}
+input[type="text"]:hover,
+input[type="password"]:hover{
+    width: 90%;
+    padding: 8px;
+    margin-bottom:15px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius:5px;
 }
 
 button {
+    width:70%;
+    border-radius:12px;
     background-color: #007bff;
     color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #0056b3;
+
+}
+p{
+    position: absolute;
+    top:70%;
+    left:10%;
+
+}
+.fp{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+
 }
 
-a {
-    color: #007bff;
+a{
+    color:#000;
+
+    
+}
+a:hover{
+    color:tomato;
 }
 
 footer {
-    text-align: center;
+    text-align:left;
     margin-top: 20px;
-    color: #777;
+    color: white;
+    position:absolute;
+    top:90%;
+    left:10%;
 }
 
     </style>
 
-
 </head>
 <body>
-    <h1>Login to Auction System</h1>
-
-    <form action="Login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <button type="submit">Login</button>
-    </form>
-
-    <p>Don't have an account? <a href="register.html">Register here</a></p>
-
-    <!-- Error message display area -->
-    <div id="error-message"></div>
-
-    <!-- Footer Section -->
-    <footer>
-        &copy; 2022 Auction System. All rights reserved.
-    </footer>
+    <div class="outerbox">
+        <h1>Welcome to shopping System</h1>
+        <div class="innerbox">
+            <h2>Login</h2>
+            <div class="login">
+                
+                <form action="Login" method="post">
+                    <input type="text" id="username" name="username" required placeholder="USERNAME"><br><br>
+                    <input type="password" id="password" name="password" required placeholder="PASSWORD"><br><br>
+                    <div class="fp">
+                        <div class="ifp">
+                            <input type="checkbox" id="rmcb" name="rmcb">
+                            <lable for="rmcb">Remember me</lable>
+                        </div>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <p>Don't have an account? <a href="Registerpage.html">Register here</a></p>
+            <!-- Error message display area -->
+            <div id="error-message"></div>
+        </div>
+        <!-- Footer Section -->
+        <footer>
+            &copy; 2024 shopping System. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>

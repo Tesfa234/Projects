@@ -5,17 +5,24 @@
             /* Add your CSS code here */
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
+                background-color:cadetblue;
                 margin: 0;
                 padding: 0;
             }
+
             form {
-                max-width: 300px;
+                backdrop-filter: blur(50px);
+                max-width: 30%;
                 margin: 20px auto;
                 padding: 20px;
-                background: #fff;
-                border-radius: 5px;
+                background: transparent;
+                border-radius: 10px;
+                border: 1px solid #ccc;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h2{
+                text-align: center;
+
             }
             input[type="text"],input[type="number"],input[type="email"],
             textarea {
@@ -23,17 +30,34 @@
                 padding: 8px;
                 margin-bottom: 10px;
                 box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: transparent;
+            }
+            input[type="text"]:hover,input[type="number"]:hover,input[type="email"]:hover,
+            textarea:hover {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
                 border: 1px solid #ccc;
-                border-radius: 4px;
+                border-radius: 10px;
+                background-color: transparent;
+            }
+            ::placeholder{
+                color: white;
             }
             input[type="submit"] {
-                width: 100%;
+                width: 70%;
                 background-color: #007bff;
                 color: white;
                 padding: 10px 15px;
                 border: none;
-                border-radius: 4px;
+                border-radius: 15px;
                 cursor: pointer;
+                position: relative;
+                left:15%;
             }
             input[type="submit"]:hover {
                 background-color: #0056b3;
@@ -42,6 +66,7 @@
     </head>
     <body>
         <form action="Additem" method="post">
+            <h2>ADD AN ITEM</h2>
             Item Name: <input type="text" name="itemName" placeholder="ITEM NAME"><br>
             Item Description: <textarea name="itemDescription" placeholder="DESCRIPTION"></textarea><br>
             Price: <input type="text" name="price" placeholder="PRICE"><br>
