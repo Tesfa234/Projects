@@ -44,7 +44,12 @@ public class Login extends HttpServlet {
             } 
             else {
                 PrintWriter out = response.getWriter();
-                out.println("Login failed");
+              
+
+                  
+                out.println("<script type=\"text/javascript\">");
+                out.println("window.alert(\"Login failed\");");
+                out.println("</script>");
             }
         }catch (Exception e) {
             e.printStackTrace();

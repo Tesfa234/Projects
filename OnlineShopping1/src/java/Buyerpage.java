@@ -21,37 +21,41 @@ public class Buyerpage extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html><head><title>Cart</title><style>\n"
                 +"body{"
-                + "display:flex;}"
-                + "h2{"
-                + "position:absolute;"
-                + "left:40%;}"
-                +".selected {"+
-                "position:relative;\n"+
-                "top:60px;\n"+
-                "left:0px;\n"+
-                "text-align:center;"+  
-"                width: 200px;\n" +
-                "height:360px;\n"+
-                "margin-right:20px;"+              
-"                padding: 20px;\n" +
-"                background: #fff;\n" +
-"                border-radius: 5px;\n" +
-"                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"
-                + "text_align:center}" +
-                "button{ "
-                + "position:absolute;"
-                + "top:60%;"
-                + "background-color: #4CAF50;"
-                + "color: white;"
-                + "padding: 10px 20px;"
-                + "border: none;"
-                + "border-radius: 5px;"
-                + "cursor: pointer;"
-                + "}"
+               
+                + "form{"
+                + "height:100%;"
+                + "width:100%;"
+                 + "display:flex;"
+                + "justify-coontent:space-around;}"
+                + "h2{}"
+                +".selected {"
+                + "height:60%;"
+                + "width:20%;"
+                + "border:1px solid #ccc;"
+                + "border-radius:20px;"
+                + "box-shadow:0 0 10px rgba(0,0,0,1.0);"
+                + "margin-bottom:20px;"
+                + "margin-left:20px;"
+                + "text-align:center;"
+                + "margin-top:20px;}"+
+                
+                
+
+                "button{"
+                + "height:7%;"
+                + "width:40%;"
+                + "border:none;"
+                + "border-radius:15px;"
+                + "background-color:#007bff;}"
+               
                 + "button:hover {"
-                + "background-color: #45a049;}"
-                +
-                "</style>"+
+               + "height:9%;"
+                + "width:45%;"
+                + "border:none;"
+                + "border-radius:15px;"
+                + "background-color:#0056b3;}"
+  
+                +"</style>"+
                 "</head>"+
                 "<body>");
          out.println("<form action=\"cartServlet\" method=\"post\">");
